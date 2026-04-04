@@ -8,12 +8,24 @@
 <body>
     <h1> Contact Info </h1>
     <nav> 
-        <a href="https://github.com/dycheng-ai" target="_blank"></a> |
-        <a href="./index.html"></a> |
-        <a href="./projects/index.html"></a> |
-        <a href="./contact/index.html"></a>
+        <a href="https://github.com/dycheng-ai" target="_blank">GitHub</a> |
+        <a href="/index.html">Home</a> |
+        <a href="/projects/index.html">Projects</a> |
+        <a href="/contact/index.html">Contact</a> |
+        <a href="/resume/index.html">Resume</a>
     </nav>
 
-    <form action=malito:dycheng@ucsd.edu method=POST enctype=text/plain></form>
+    <form action=malito:dycheng@ucsd.edu method=POST enctype=text/plain> 
+        <label for="Email">Email</label>
+        <input name="email" type="email">
+        <br><br>
+        <label for="Subject">Subject</label>
+        <input name="subject" type="text">
+        <br><br>
+        <label for="Body">Body</label>
+        <textarea name="body"></textarea> 
+        <br><br>
+        <button>Submit</button>
+    </form>
 </body>
 </html>
