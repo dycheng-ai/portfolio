@@ -33,7 +33,8 @@ nav ul {
 }
 
 nav li {
-  display: flex;
+  display: contents;
+  flex: 1;
 }
 
 nav a {
@@ -83,7 +84,6 @@ form button {
   grid-column: 1 / -1;
 }
 
-/* Projects grid */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
