@@ -29,6 +29,7 @@ nav {
 
 nav ul {
   display: flex;
+  flex: 1;
 }
 
 nav li {
