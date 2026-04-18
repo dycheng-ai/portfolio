@@ -4,6 +4,7 @@
 
 html {
   accent-color: var(--color-accent);
+  color-scheme: light dark;
 }
 
 body {
@@ -23,8 +24,10 @@ h1 {
 
 nav {
   display: flex;
+  font-size: 110%;
+  margin-top: 1.5em;
   margin-bottom: 1em;
-  border-bottom: 1px solid oklch(80% 3% 200);
+  border-bottom-color: oklch(50% 10% 200 / 40%);
 }
 
 nav ul {
@@ -53,7 +56,7 @@ nav a.current {
 nav a:hover {
   border-bottom: 0.4em solid var(--color-accent);
   padding-bottom: 0.1em;
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 30%);;
 }
 
 input,
@@ -101,4 +104,11 @@ form button {
 
 .projects h2 {
   margin: 0;
+}
+
+.color-scheme {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font: 80%/1.5 system-ui;
 }
