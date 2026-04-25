@@ -2,7 +2,7 @@
     {
         "title": "Project 1 Visualization",
         "year": "2026",
-        "image": "./images/project1_vis.png",
+        "image": "../images/project1_vis.png",
         "description": "Highly processed foods have a ~0.35 correlation with total sugar levels."
     },
     {
