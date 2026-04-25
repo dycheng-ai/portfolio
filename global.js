@@ -4,18 +4,36 @@ function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
 
-// // returns an array of all nav links on the page
-// navLinks = $$("nav a");
+export async function fetchJSON(url) {
+  try {
+    // Fetch the JSON file from the given URL
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+  }
+}
 
-// // finds link to current page
-// let currentLink = navLinks.find(
-//   (a) => a.host === location.host && a.pathname === location.pathname,
-// );
+export function renderProjects(projects, containerElement, headingLevel = 'h2'){
+    containerElement.innerHTML = '';
+    for (const project of projects) {
+        const article = document.createElement('article');
+        article.innerHTML = `
+        <${headingLevel}>${project.title}</${headingLevel}>
+        <img src="${project.image}" alt="${project.title}">
+        <p>${project.description}</p>
+        `;
+        containerElement.appendChild(article);
+    }
+}
 
-// if (currentLink) {
-//   // or if (currentLink !== undefined)
-//   currentLink.classList.add('current');
-// }
+export async function fetchGitHubData(username) {
+  return fetchJSON(`https://api.github.com/users/${username}`);
+}
 
 let pages = [
   { url: '', title: 'Home' },

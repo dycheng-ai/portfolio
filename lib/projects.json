@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Project 1 Visualization",
+        "year": "2026",
+        "image": "/images/project1_vis.png",
+        "description": "Highly processed foods have a ~0.35 correlation with total sugar levels."
+    },
+    {
+        "title": "Sit Amet Consectetur",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "title": "Adipiscing Elit Sed",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "title": "Eiusmod Tempor Incididunt",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    },
+    {
+        "title": "Labore Dolore Magna",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore."
+    },
+    {
+        "title": "Aliqua Enim Veniam",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure."
+    },
+    {
+        "title": "Nostrud Exercitation Ullamco",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint."
+    },
+    {
+        "title": "Laboris Nisi Aliquip",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum lorem."
+    },
+    {
+        "title": "Commodo Consequat Duis",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+    },
+    {
+        "title": "Irure Dolor Reprehenderit",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam quis nostrud."
+    },
+    {
+        "title": "Voluptate Velit Esse",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor."
+    },
+    {
+        "title": "Cillum Dolore Fugiat",
+        "year": "2024",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "In reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat."
+    }
+]
