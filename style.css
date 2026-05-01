@@ -99,7 +99,7 @@ form button {
 .projects article {
   display: grid;
   grid-template-rows: subgrid;
-  grid-row: span 3;
+  grid-row: span 4;
 }
 
 .projects img {
@@ -110,6 +110,14 @@ form button {
 
 .projects h2 {
   margin: 0;
+}
+
+.year {
+  font-style: italic;
+}
+
+.projects article p {
+  margin-top: 0;
 }
 
 #profile-stats dl {
