@@ -8,8 +8,9 @@
     {
         "title": "Sit Amet Consectetur",
         "year": "2026",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "image": "/portfolio/images/bike_watching_img.png",
+        "url": "https://dycheng-ai.github.io/bikewatching/",
+        "description": "Interactive map of Boston visualizing BlueBike station traffic."
     },
     {
         "title": "Adipiscing Elit Sed",
