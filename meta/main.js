@@ -68,7 +68,7 @@ function renderCommitInfo(data, commits) {
 
 // ── Steps 2–5: Scatterplot ────────────────────────────────────────────────────
 
-let xScale, yScale;
+let xScale, yScale, isBrushing = false;
 
 function renderTooltipContent(commit) {
   const link = document.getElementById('commit-link');
@@ -137,6 +137,8 @@ function renderLanguageBreakdown(selection) {
 }
 
 function brushed(event) {
+  isBrushing = event.type === 'start' || event.type === 'brush';
+  if (isBrushing) updateTooltipVisibility(false);
   const selection = event.selection;
   d3.selectAll('circle').classed('selected', (d) => isCommitSelected(selection, d));
   renderSelectionCount(selection);
@@ -214,13 +216,15 @@ function renderScatterPlot(data, commits) {
     .style('fill-opacity', 0.7)
     .on('mouseenter', (event, commit) => {
       d3.select(event.currentTarget).style('fill-opacity', 1);
-      renderTooltipContent(commit);
-      updateTooltipVisibility(true);
-      updateTooltipPosition(event);
+      if (!isBrushing) {
+        renderTooltipContent(commit);
+        updateTooltipVisibility(true);
+        updateTooltipPosition(event);
+      }
     })
     .on('mouseleave', (event) => {
       d3.select(event.currentTarget).style('fill-opacity', 0.7);
-      updateTooltipVisibility(false);
+      if (!isBrushing) updateTooltipVisibility(false);
     });
 
   // Brush
